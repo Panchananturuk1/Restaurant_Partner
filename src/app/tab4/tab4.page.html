@@ -1,0 +1,108 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Grow Your Business</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    
+  <ion-item lines="none">
+    <ion-label>Recomended for you</ion-label><br>
+    
+  </ion-item>
+
+  <ion-item>
+    <ion-label>OFFERS</ion-label>
+  </ion-item>
+
+    <ion-slides [options]="option" class="ion-margin-top">
+      <ion-slide>
+        <ion-card>
+          <!-- <img src="assets/images/50percent.png"> -->
+          <h1>50 %</h1>
+          <p>OFFER</p>
+        </ion-card>
+      </ion-slide>
+      
+      <ion-slide>
+        <ion-card>
+          <img src="assets/images/40percent.png">
+        </ion-card>
+      </ion-slide>
+  
+      <ion-slide>
+        <ion-card>
+          <img src="assets/images/60percent.png">
+        </ion-card>
+      </ion-slide>
+  
+      <ion-slide>
+        <ion-card>
+          <img src="assets/images/50percentnew.png">
+        </ion-card>
+      </ion-slide>
+  
+      <ion-slide>
+        <ion-card>
+          <img src="assets/images/01.jpg">
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  
+
+
+<ion-item class="item-text-wrap ">
+  <ion-grid>
+    <ion-row >
+        <ion-col size="" routerLink="/page1">
+          <ion-icon size="large" name="ticket-outline"></ion-icon>
+            <p>Home</p>
+        </ion-col>
+        <ion-col  class="myfont" routerLink="/page2">
+           <b> <p>Offers and discounts </p> </b>
+               <p>Start your own offers and grow your business</p>
+           
+        </ion-col>
+    </ion-row>
+</ion-grid>
+</ion-item>
+
+<!-- <ion-item button (click)="buttonClick()"> -->
+  <ion-item>
+  <ion-label>
+    Button Item
+  </ion-label>
+</ion-item>
+
+
+  <ion-card class="item-text-wrap">
+    <ion-card-header>
+      <ion-card-title>Build Your Own</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-grid>
+        <!-- <ion-row class="ion-text-center"> -->
+          <ion-row>
+            <ion-col size="" routerLink="/page1">
+              <ion-icon size="large" name="ticket-outline"></ion-icon>
+                <p>Home</p>
+            </ion-col>
+            <ion-col size="" routerLink="/page2">
+               
+                <p> Offers and discounts </p>
+                 <p>Start your own offers and grow your business</p>
+                    
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+
+
+
+
+
+</ion-content>
+
