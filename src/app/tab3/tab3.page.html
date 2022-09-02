@@ -2,27 +2,43 @@
   <ion-toolbar>
       <ion-grid>
         <ion-row>
-          <ion-col size="8"><ion-label>Business Insights</ion-label></ion-col>
-          <ion-col class="align-center" size="4"><ion-icon name="grid-outline"></ion-icon></ion-col>
+          <ion-col size="8">
+            <ion-label>Business Insights</ion-label>
+          </ion-col>
+          <ion-col class="align-right" size="4">
+            <ion-icon routerLink="/explore-more" name="grid-outline"></ion-icon>
+          </ion-col>
         </ion-row>
       </ion-grid>
   </ion-toolbar>
 </ion-header>
 
 
-
 <ion-content [fullscreen]="true">
-  <ion-card>
+  <ion-card class="card1">
   <ion-grid>
     <ion-row>
-      <ion-col></ion-col>
-      <ion-col></ion-col>
+      <ion-col size="7">
+        <!-- <ion-label>Profile Strengths: <br><b>Weak</b> </ion-label>
+        <p>Get Up to 2x growth</p>
+        <p>complte 3 quick steps</p> -->
+        <ion-card-header>
+          <ion-card-title >Profile Strength: <br> <span class="yellow"><b>WEAK</b></span> </ion-card-title>
+        </ion-card-header>
+        <div class="paddings">
+          <p>Get Up to 2x growth</p>
+          <p>complte 3 quick steps</p>
+        </div>
+       
+       </ion-col>
+      <ion-col size="5">
+        <ion-icon class="align-center big" name="timer-outline"></ion-icon>
+      </ion-col>
     </ion-row>
   </ion-grid>
 </ion-card>
 
-
-  <ion-card class="card1">
+  <!-- <ion-card class="card1">
     <ion-card-header>
       <ion-card-title >Profile Strength: <br> <span class="yellow"><b>WEAK</b></span> </ion-card-title>
     </ion-card-header>
@@ -30,7 +46,11 @@
       Keep close to Nature's heart... and break clear away, once in awhile,
       and climb a mountain or spend a week in the woods. Wash your spirit clean.
     </ion-card-content>
-  </ion-card>
+  </ion-card> -->
+  <hr>
+  <div class="paddings">
+    <ion-label>Delivered Orders</ion-label>
+  </div>
 
   <ion-card>
     <ion-grid fixed>
@@ -52,17 +72,184 @@
     </ion-grid>
   </ion-card>
 
-  
-  <ion-card color="light">
+
+  <ion-card class="bk-color">
     <ion-card-header>
-      <ion-card-title>
+      <ion-card-title class="bk-color">
         Get More orders from Foodie
       </ion-card-title>
     </ion-card-header>
     <ion-card-content>
       Items with food images lead to more orders compared to items without them. Add photos
       to your menu items to get more orders
-      <ion-button color="primary">Go to menu</ion-button>
     </ion-card-content>
+      <ion-button shape="round" color="medium" >Go to menu</ion-button>
   </ion-card>
+
+  <!-- <ion-item> -->
+    <!-- <div class="paddings">
+      <ion-label>Rejected Orders</ion-label>
+      <p>Lost sales from orders rejected by you</p>
+    </div> -->
+    <hr>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="8">
+          <ion-label>Rejected Orders</ion-label>
+          <p>Lost sales from orders rejected by you</p>
+        </ion-col>
+        <ion-col size="4">
+          <a href="">
+            see more
+            <ion-icon name="caret-forward-outline"></ion-icon>
+          </a></ion-col>
+      </ion-row>
+    </ion-grid>
+  <!-- </ion-item> -->
+    <ion-card fills="outline" >
+      <ion-grid>
+        <ion-row>
+          <ion-col class="border2" size="12">Today</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6" class="border">This Week</ion-col>
+          <ion-col size="6">This Month</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+
+    <ion-card class="bk-color">
+      <ion-card-header>
+        <ion-card-title class="bk-color">
+          Great Work!
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+      You have accepted all orders till now in this month
+      </ion-card-content>
+    </ion-card>
+
+    <hr>
+
+    <div class="paddings">
+      <ion-label>Fast selling dishes in your menu</ion-label>
+      <p>Details from 26 Aug to 2 sep 2022</p>
+    </div>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4" class="border">Menu Items</ion-col>
+          <ion-col size="4" class="border">Revenue Contribution</ion-col>
+          <ion-col size="4">Quantity sold</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-card class="bk-color">
+      <ion-card-header>
+        <ion-card-title class="bk-color">
+         Run promotions to get more orders
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        set campaigns on your own and offer customized discounts to give a further
+        boost to your sales
+      </ion-card-content>
+        <ion-button shape="round" fill="outline" color="light" >start a promo</ion-button>
+    </ion-card>
+
+    <hr>
+
+    <div class="paddings">
+      <ion-label>customers complaints</ion-label><br>
+      <ion-label>Details from 4 Aug to 2 sep 2022</ion-label>
+    </div>
+
+    <ion-card>
+      <ion-grid>
+        <ion-row class="bk-color2">
+          <ion-col>
+            <ion-icon name="thumbs-up-outline"></ion-icon>
+            Great work, no complaints in this time period</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>0 orders with customer complaints</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+<hr>
+
+<ion-grid>
+  <ion-row>
+    <ion-col size="8">
+      <ion-label>Fod preparation time</ion-label><br>
+      <ion-label>Deatils from 26 aug to sep 2022</ion-label>
+    </ion-col>
+    <ion-col size="4">
+      <a href="">
+        learn more
+        
+      </a>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-label color="dark"> 60% order prepared in time</ion-label>
+       </ion-col>
+    </ion-row>
+    <ion-row class="border2">
+      <ion-col size="6" class="border">
+        <ion-icon color="success" name="time-outline"></ion-icon>
+        in time orders
+      </ion-col>
+      <ion-col size="6">
+        <ion-icon color="danger" name="time-outline"></ion-icon>
+        Delayed orders
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-label>
+          <ion-icon color="danger" name="time-outline"></ion-icon>
+          Most delays
+        </ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+<ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-label color="dark">64% orders marked 'Orders Ready' Correctly</ion-label>
+        </ion-col>
+    </ion-row>
+    <ion-row class="border2">
+      <ion-col size="6" class="border">
+        <ion-icon color="success" name="time-outline"></ion-icon>
+        correct
+      </ion-col>
+      <ion-col size="6">
+        <ion-icon color="danger" name="time-outline"></ion-icon>
+        incorrect/missed
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-label>
+          Always click Order Ready when foodis ready to improve accuracy of your preparation time
+        </ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+<hr> 
+
 </ion-content>

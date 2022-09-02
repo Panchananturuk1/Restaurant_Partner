@@ -5,13 +5,12 @@
       <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
     </ion-item> -->
     <ion-item>
-      <ion-toggle></ion-toggle>
+      <ion-toggle data-on="ON">sd</ion-toggle>
       <ion-icon name="information-circle-outline"></ion-icon>
       <ion-icon name="notifications-circle-outline"></ion-icon>
       <ion-searchbar></ion-searchbar>
-      <!-- <ion-button class="btn" (click)="explore()"> -->
+     
         <ion-icon (click)="explore()" routerLink="explore-more" class="right-side" name="grid-outline"></ion-icon>
-      <!-- </ion-button> -->
       
       <!-- <ion-icon name="information-circle-outline"></ion-icon> -->
       <!-- <div class="margins">
@@ -22,9 +21,9 @@
     </ion-item>
 
     <ion-item>
-      <ion-button class="spaces" color="medium">Preparing</ion-button>
-      <ion-button class="spaces" color="medium">Ready</ion-button>
-      <ion-button class="spaces" color="medium">Picked up</ion-button>
+      <ion-button class="spaces" fill="outline" color="medium">Preparing</ion-button>
+      <ion-button class="spaces" fill="outline" color="medium">Ready</ion-button>
+      <ion-button class="spaces" fill="outline" color="medium">Picked up</ion-button>
     </ion-item>
   </ion-toolbar>
 </ion-header>

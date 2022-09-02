@@ -30,9 +30,40 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 32%, rgba(
         width: 100%;
     }
 
-    .align-center{
+    .align-right{
         display: flex;
         justify-content: right;
         align-items: right;
+        height: 100%;
        
+    }
+    .bk-color{
+        background-color: white;
+        color: black;
+    }
+
+    .paddings{
+        padding: 10px;
+    }
+
+    .big{
+        width:120px;
+        // height: 150px; 
+    }
+    
+
+    // .mymargin{
+    //     margin-top: 100px;
+    // }
+
+    hr{
+        border-top: 6px solid gray;
+    }
+
+    .bk-color2{
+        background-color: green;
+    }
+
+    a{
+        text-decoration: none;
     }
