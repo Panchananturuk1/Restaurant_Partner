@@ -2,14 +2,37 @@
     color:yellow;
 }
 
-.bkcolor{
-background-color: white;
-}
-
 .bkcolor2{
     background-color: cadetblue;
     }
 
     .right{
         margin-left: 100px;
+    }
+
+    .card1{
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 32%, rgba(0,212,255,1) 100%);
+    }
+
+    .myfont{
+        color: white;
+        
+    }
+
+    .border{
+        border-right: 1px solid white;
+        width: 100%;
+    }
+
+    .border2{
+        border-bottom: 1px solid white;
+        width: 100%;
+    }
+
+    .align-center{
+        display: flex;
+        justify-content: right;
+        align-items: right;
+       
     }

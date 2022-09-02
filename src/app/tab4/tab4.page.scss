@@ -4,7 +4,7 @@ ion-title {
 
 ion-card {
     // width: 100%;
-    height: 160px;
+    // height: 160px;
     box-shadow: none;
     border-radius: 12px;
     
@@ -30,21 +30,44 @@ ion-card {
     transition: 400ms all ease-in-out;
 }
 
-.heights{
-    height: 0px;
+
+
+.align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    // margin-left: 30%;
+    width: 50%;
 }
 
 
-ion-card{
+
+
+// ion-card{
     
-    p{
-        white-space: normal;
-    }
+//     p{
+//         white-space: normal;
+//     }
         
     
-}
+// }
 
 
 .myfont{
     font-size: 10px;
 }
+
+
+.fifty{
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    // padding: 0px;
+    line-height: 0.3;
+    color: black;
+    width: 100%;
+    height: 130px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(213,244,250,1) 0%, rgba(0,212,255,1) 89%, rgba(5,209,250,1) 100%);}

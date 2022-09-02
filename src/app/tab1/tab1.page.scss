@@ -17,11 +17,24 @@ ion-searchbar{
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin-left: 30%;
-    width: 50%;
+    // height: 100%;
+    // width: 50%;
 }
 
+.big{
+    
+    width:200px;
+    height: 200px;
+  
+}
 
+div ion-icon{
+    margin: 25px;;
+}
+
+.btn{
+    background-color: none;
+}
 
 
 

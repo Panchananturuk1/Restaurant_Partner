@@ -6,9 +6,19 @@
     </ion-item> -->
     <ion-item>
       <ion-toggle></ion-toggle>
+      <ion-icon name="information-circle-outline"></ion-icon>
       <ion-icon name="notifications-circle-outline"></ion-icon>
       <ion-searchbar></ion-searchbar>
-      <ion-icon class="right-side" name="grid-outline"></ion-icon>
+      <!-- <ion-button class="btn" (click)="explore()"> -->
+        <ion-icon (click)="explore()" routerLink="explore-more" class="right-side" name="grid-outline"></ion-icon>
+      <!-- </ion-button> -->
+      
+      <!-- <ion-icon name="information-circle-outline"></ion-icon> -->
+      <!-- <div class="margins">
+        <ion-icon name="notifications-circle-outline"></ion-icon>
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-icon class="right-side" name="grid-outline"></ion-icon>
+      </div> -->
     </ion-item>
 
     <ion-item>
@@ -20,7 +30,8 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
-  <!-- <img src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Desktop-Food-Images-Download.jpg" alt=""> -->
-  <ion-icon name="storefront-outline" size="large" class="align-center bigsize"></ion-icon>
+  <div class="align-center">
+    <ion-icon class="big" name="storefront-outline" size="large"></ion-icon>
+  </div>  
+  
 </ion-content>
